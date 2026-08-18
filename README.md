@@ -2,8 +2,7 @@
 A responsive one-page site for NovaTech, a fictional studio offering web development, digital marketing and UI/UX design for small businesses.
 
 ## 🌐 Live Demo
-
-🔗 Add your deployed website link here
+(https://nova-tech-landing-page-one.vercel.app/)
 
 ---
 
