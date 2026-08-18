@@ -609,7 +609,6 @@ body::before {
     align-items: center;
     justify-content: center;
 
-    /* Fallback visual in case WebGL / Three.js fails to load */
     background:
         radial-gradient(
             circle at center,
@@ -826,7 +825,6 @@ body::before {
 
     pointer-events: none;
 
-    /* Fallback visual in case WebGL / Three.js fails to load */
     background:
         radial-gradient(
             circle at 50% 40%,
@@ -2425,4 +2423,93 @@ body::before {
         );
 
     pointer-events: none;
+}
+
+
+/* =========================================================
+   FOOTER CONTACT + SOCIAL LINKS
+========================================================= */
+
+.footer-contact {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    font-family: "Inter", sans-serif;
+}
+
+.footer-email {
+    color: #868eac;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 0.68rem;
+
+    font-weight: 400;
+
+    transition:
+        color 0.3s ease;
+}
+
+.footer-email:hover {
+    color: #b3bded;
+}
+
+.footer-socials {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.footer-socials a {
+    color: #868eac;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 0.68rem;
+
+    font-weight: 400;
+
+    transition:
+        color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #b3bded;
+}
+
+
+/* =========================================================
+   FOOTER RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .footer-contact {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .footer-contact {
+        grid-column: auto;
+
+        gap: 10px;
+    }
+
+    .footer-socials {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
 }
